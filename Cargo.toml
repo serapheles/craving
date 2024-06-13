@@ -1,0 +1,20 @@
+[workspace]
+members = ["shared", "shared_types"]
+resolver = "1"
+
+[workspace.package]
+authors = ["Kyle Potempa"]
+edition = "2021"
+repository = "N/A"
+license = "Apache-2.0"
+keywords = ["crux", "crux_core", "cross-platform-ui", "ffi"]
+rust-version = "1.66"
+
+[workspace.dependencies]
+anyhow = "1.0.86"
+crux_core = "0.8"
+crux_http = "0.9.2"
+crux_kv = "0.4"
+crux_platform = "0.1"
+crux_time = { version = "0.4", features = ["chrono"] }
+serde = "1.0.202"

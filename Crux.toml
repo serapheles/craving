@@ -1,0 +1,14 @@
+name = "Craving"
+description = "Simple app to interact with an API."
+authors = ["Kyle Potempa"]
+repository = "N/A"
+
+[cores.shared]
+source = "shared"
+type_gen = "shared_types"
+crux_version = "0.8.0"
+
+[shells.android]
+template = "Android"
+source = "Android"
+cores = ["shared"]
